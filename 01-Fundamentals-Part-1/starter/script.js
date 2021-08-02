@@ -66,8 +66,8 @@ console.log(firstName + ' ' + lastName); //concatenar
 let x = 10 + 5;
 x += 10; // x = x + 10 = 25
 x *= 4; // x = x * 4 = 100;
-x++; // x = x + 1 
-x--; // x = x - 1  
+x++; // x = x + 1
+x--; // x = x - 1
 console.log(x);
 
 //Comparison Operators
@@ -113,7 +113,7 @@ Test data:
 /*const markMass = 78;
 const markHeight = 1.69;
 const johnMass = 92;
-const johnHeight = 1.95;*/
+const johnHeight = 1.95;
 const markMass = 95;
 const markHeight = 1.88;
 const johnMass = 85;
@@ -126,4 +126,73 @@ console.log('Marks BMI is ' + markBMI);
 console.log('Johns BMI is ' + johnBMI);
 
 const markHigherBMI = (markBMI > johnBMI);
-console.log(markHigherBMI);
+console.log(markHigherBMI);*/
+// End of Coding Challenge #1
+
+////////////////////////////////
+/*const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = '1991';
+const year = 2037;
+
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(jonas);*/
+
+/*Template Literal/String
+Utilizamos estos simbolos `` para hacer un string sin comillas y
+  utilizamos ${variable} para poner variables dentro del string
+  es nuevo de ES6
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew);*/
+
+/*Esto es un string multilinea que se puede utilizar con los simbolos ``
+  Podemos escribir strings dentro de los ``
+console.log('String con \n\
+multiples\n\
+lineas');
+console.log(`String con
+multiples
+lineas`);
+*/
+/* Condicionales */
+/*const age = 15;
+
+if (age >= 18) {
+    console.log('Sarah can start driving license 🚗.');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sara is too young. Wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 1997;
+
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+*/
+
+//////////////////////////////////////
+// Coding Challenge #2
+
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+// const markMass = 95;
+// const markHeight = 1.88;
+// const johnMass = 85;
+// const johnHeight = 1.76;
+
+const markBMI = markMass / (markHeight ** 2);
+const johnBMI = johnMass / (johnHeight ** 2);
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's BMI ${johnBMI}.`);
+} else {
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI ${markBMI}.`);
+}
